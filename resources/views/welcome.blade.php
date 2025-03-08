@@ -30,6 +30,11 @@
         <section>
             <x-section-heading>Recent Jobs</x-section-heading>
 
+            <div class="mt-6 space-x-1">
+                <x-job-card-wide />
+                <x-job-card-wide />
+                <x-job-card-wide />
+            </div>
         </section>
     </div>
 </x-layout>
