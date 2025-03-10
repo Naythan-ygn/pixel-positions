@@ -5,8 +5,9 @@
 @source "../views";
 
 @theme {
-    --font-sans: "JetBrains Mono", ui-sans-serif, system-ui, sans-serif,
+    --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
+    --text-tiny: 10px;
     --color-black: #060606;
 }
