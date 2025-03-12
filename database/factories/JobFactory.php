@@ -17,7 +17,14 @@ class JobFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'employer_id' => \App\Models\Employer::factory(),
+            'title' => $this->faker->sentence(3),
+            'description' => $this->faker->paragraph(5),
+            'location' => $this->faker->city,
+            'salary' => $this->faker->randomElement(['$30,000', '$50,000', '$75,000', '$100,000']),
+            'scheduled_date' => $this->faker->randomElement(['Fulltime', 'Parttime']),
+            'url' => $this->faker->url,
+            'featured' => $this->faker->randomElement([true, false]),
         ];
     }
 }
